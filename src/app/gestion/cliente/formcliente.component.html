@@ -1,0 +1,61 @@
+<div class="card bg-dark text-white">
+    <div class="card-header">Mantenimiento de Cursos</div>
+    <div class="card-body">
+
+      <form>
+        <div class="form-group row">
+          <label for="id" class="col-form-label col-sm-2">Codigo</label>
+          <div class="col-sm-3">
+             <input type="text" class="form-control" name="id" [(ngModel)]="clienteForm.id">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+          <div class="col-sm-3">
+             <input type="text" class="form-control" [(ngModel)]="clienteForm.nombre" name="nombre">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="creditos" class="col-form-label col-sm-2">Apellidos</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" [(ngModel)]="clienteForm.apellidos" name="creditos">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="fechaNacimiento" class="col-form-label col-sm-2">Fecha Nacimiento</label>
+          <div class="col-sm-3">
+            <input type="date" class="form-control" [(ngModel)]="clienteForm.fechaNacimiento" name="fechaNacimiento">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Direccion" class="col-form-label col-sm-2">Direccion</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" [(ngModel)]="clienteForm.direccion" name="Direccion">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="Correo" class="col-form-label col-sm-2">Correo</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" [(ngModel)]="clienteForm.correo" name="Correo">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Telefono" class="col-form-label col-sm-2">Telefono</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" [(ngModel)]="clienteForm.telefono" name="Telefono">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-3">
+            <button class="btn btn-primary" role="button" (click)='agregarCliente()' >Crear</button>
+            <ng-template #elseBlock>
+              <button class="btn btn-primary" role="button" >Editar</button>
+            </ng-template>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
